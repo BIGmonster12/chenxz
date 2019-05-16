@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米注册</title>
+    <style>
+        body {
+            width: 1536px;
+            height: 755px;
+            color: #666666;}
+
+        .father {
+            width: 786px;
+            height: 540px;
+            margin: 0 auto;
+            top: 100px;
+            position: relative;
+            background-color: #ffffff;
+        }
+
+        .father_one {
+            width: 100%;
+            height: 88px;
+
+        }
+
+        .logo {
+            width: 49px;
+            height: 48px;
+            margin: 0 auto;
+            display: block;
+            cursor: default;
+            margin: 0 auto;
+            background-color: #ff6700;
+
+        }
+
+        .mother {
+            width: 100%;
+            height: 45px;
+
+            font-size: 30px;
+            font-weight: normal;
+            color: #333;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        .father_two {
+            width: 100%;
+            height: 386px;
+
+        }
+
+        .son {
+            width: 332px;
+            height: 306px;;
+            margin: 0 auto;
+
+        }
+
+        .son .son_two {
+            top: 28px;
+            padding-bottom: 5px;
+            color: #333;
+            font-weight: normal;
+            font-size: 14px;
+            position: relative;
+
+        }
+
+        .father_two .son_three {
+            bottom: 292px;
+            left: 227px;
+            width: 335px;
+            height: 40px;
+            position: absolute;
+        }
+
+        .father_two .son_three .inner {
+
+            width: 260px;
+            height: 40px;
+            float: left;
+            color: #555555;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        .son .son_three a:hover{
+            cursor: pointer;
+        }
+
+        .son_six {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+
+            background: url(https://account.xiaomi.com/static/res/0eeaaed/passport/oauth/images/icon_user.png) no-repeat left center;
+            margin: 13px 15px 0 19px;
+            position: relative;
+        }
+
+        .son .son_five {
+            left: 261px;
+            top: -11px;
+            float: right;
+
+            width: 56px;
+            height: 44px;
+            margin: 11px 12px 0 12px;
+            border: 1px gray solid;
+            background-position: 0px 0;
+            position: absolute;
+
+        }
+
+        .brother {
+
+            top: 73px;
+            margin-top: -10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+            position: relative;
+        }
+
+        .son .brother_one {
+            bottom: 195px;
+            width: 332px;
+            height: 25px;
+            font-size: 16px;
+
+            color: #333;
+            font-weight: normal;
+            position: absolute;
+        }
+
+        .sister {
+            left: 229px;
+            bottom: 157px;
+            width: 332px;
+            height: 57px;
+            position: absolute;
+        }
+
+        .sister_one {
+            width: 74px;
+            height: 57px;
+            padding-bottom: 15px;
+
+            position: relative;
+        }
+
+        .sister_two {
+            width: 74px;
+            height: 42px;
+
+        }
+
+        .sister_two .sister_three {
+            height: 42px;
+            width: 60px;
+            left: 0px;
+            border: 1px gray solid;
+            position: absolute;
+        }
+
+        .sister .sister_three p {
+            width: auto;
+            border-right: 0 none;
+            border-right: 1px solid #e8e8e8;
+            cursor: pointer;
+        }
+
+        .sister_five {
+            float: left;
+            margin: -28px 0 0 38px;
+            width: 0;
+            height: 0;
+            line-height: 0;
+            font-size: 0;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #9d9d9d transparent transparent transparent;
+
+        }
+
+        .small {
+            left: 69px;
+            top: 0;
+            width: 257px;
+            height: 57px;
+
+            position: absolute;
+        }
+
+        .sister .small_box {
+            margin-left: -1px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .sister .small input {
+            width: 244px;
+            left: -7px;
+            position: absolute;
+        }
+
+        .small_box input {
+            height: 20px;
+            line-height: 20px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .cat {
+            left: 226px;
+            top: 380px;
+            width: 332px;
+            height: 43px;
+
+            position: absolute;
+        }
+
+        .cat_one {
+            background-color: #ff6700;
+            width: 332px;
+            height: 42px;
+            margin: 0 auto;
+            line-height: 42px;
+            text-align: center;
+            font-size: 14px;
+            display: block;
+            cursor: pointer;
+            border: 1px solid #e8e8e8;
+            overflow: hidden;
+            left: 0px;
+            top: 20px;
+            position: absolute;
+        }
+
+        .father_two_one {
+            width: 786px;
+            height: 80px;
+            top: 20px;
+            position: relative;
+
+        }
+
+        .father_two_tow {
+            bottom: 0px;
+            width: 786px;
+            height: 40px;
+            color: #9d9d9d;
+            position: absolute;
+        }
+
+        .father_two_one .father_two_three {
+            left: 195px;
+            bottom: 0px;
+            width: 398px;
+            height: 40px;
+            font-size: 14px;
+            cursor:pointer;
+            position: absolute;
+        }
+
+        .agreeLog {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            margin-top: -4px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAk5JREFUOBGVlctrU1EQxn/3tqZVKxQRCirdWRRX4sKuK7j1GYoLN4JYULT6FwiuFSOiEf+A+iq6FwV3uhIXWqmugigVKT5iTUKa6zfn5CQ3MUnTgXPPa+Y7c+bMNzeihyRHGGWAcSJGnFpCkVUK0VN+dDOLOm0kx9lNhhmBTartFODWOuCyAD+rvaJCPprnQ7t9C2ACMdPMCuys2oRmCKxVpERNrcKi2l2Nb0WPNKpLQz3JCiLmHkOcYJhNQaFnX1YIysxzn9MCsmOcD94m5ryAjvUNZlZDim2GrLuVR/GAyVH2uGuawnrFbqMQubjL1qJkJ81occKN1/rEg5Bpi4jZ2iNKYpcagxxIXb475OgOuPIern6UpYCDmFvKCMOKXZ751Ajbvo8GWudbxuDyCxjbBd8+6QmqzX17WsNQzsbybHMjz4LK/izc/AVTF/zKyDaBPReYolJ4A7cPB81mb7kqAqT8bu6xIiJs2AjTOeWhPJ08Bdv3wpd3kDsEf7sSRf7V+EPCcgoOFp7B3Dm/lL0G4/tgaRGuH4Ti9xbVxsQwRM3YuOnoZAxIy8s78PCSVrTx86vApuD3UlqjOTZbT8mCY0pykhvKposK6v+SUWpWS62P0K61qoUVctEcsz4PS+KkcbOTVIq9wczG8zpvQwcYPWHBEb2kc9YrxmcViVB5vIcG8kDXLvNYTS71KeaAFQdVnGDRSBurFkmNM5R4K4X+y5ccCZXGQN2jBPTQu2IxLNBuBbbKa3mWd6EKRvW+I2DQafwCjE0mlrNr/AL+AbcOsj+c24+/AAAAAElFTkSuQmCC);
+        }
+        .disagreeLog{
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            margin-top: -4px;
+            display: inline-block;
+            vertical-align: middle;
+            background:  url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAcxJREFUOBGdVb1qAkEQ9vYwiBcwXiyuiOGKEJLaIoHUh/U9RSxS5Ql8BIsUpsgLHAlCGhEby1xhnZ9CvBDQQs5IvEMQNPMdrviz/twt6O7OzPfN7O7MnBTbMiqVylEikThljB3CbDKZDEej0bdpmr+bYJJIUavVLjKZTCGZTF6nUqmTeDyuwm48HruDweDH9/23Xq9XzufzHyL8XFYsFplt2/etVuuTQFOKaLo6IIMONrC1LOtgTkALmW+gyOVyT5qm3em6rlFUMUlaPwBk0KXT6WNZlm/I4Vk2m31tNBpTzhXM8NbpdP5WI9q1b7fbHrBLZPV6/RJH2AXepAcW9w5Shj8Kv0BHPcc6ygAWjwgsQ2ooinJF6RGFK8AAi4wAF0OeITVED7CvB2DBEeQsgRSeZ/sSiOzAgQII7lBkEFUGQg8VEJWA48CB0mSoTZQTpQTXhZ6BBQe4AnCz2SyhnKIOYMEBsuAOXdd97Ha7X6FDmwGARbNYwqN8UEZho0S5Lpbe/JWr1WqJPD3Tb7jkacvGcRyfgnih+UFoho4Db2HaF1reItl6fyItmoWqqrebGqzneXa/3y8bhvG+SIa1kJAb8U8A7ZWZzNv1CfgHv1r3E9DWv4gAAAAASUVORK5CYII=)
+        }
+
+        .father_two_tow a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .dance {
+            width: 100%;
+            height: 90px;
+            bottom: -60px;
+            position: absolute;
+        }
+
+        .dance .dance_two {
+            width: 100%;
+            height: 20px;
+        }
+
+        .dance .dance_one {
+            list-style: none;
+            text-align: center;
+
+        }
+
+        .dance .dance_one li {
+            display: inline-block;
+            padding: 0 10px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .dance .dance_one li a {
+            color: #757575;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .dance .dance_one .long {
+            left: 13px;
+            color: #757575;
+            position: relative;
+        }
+
+        .info {
+            padding: 10px;
+            text-align: center;
+            color: #757575;
+            font-size: 14px;
+        }
+
+        .info_of {
+            color: #757575;
+            font-size: 13px;
+            text-decoration: none;
+
+        }
+
+    </style>
+    <style>
+        .country {
+            width: 330px;
+            height: 268px;
+            border: 1px solid #e8e8e8;
+            overflow: scroll;
+            position: absolute;
+            left: 226px;
+            top: 253px;
+            background-color: #fff;
+            z-index: 10;
+        }
+
+        .header {
+            background: #fcdecc;
+            padding-left: 10px;
+            margin-bottom: 6px;
+            line-height: 30px;
+            color: #ef5b00 !important;
+            cursor: default;
+        }
+
+        .list_to {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .record {
+            color: #000;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            padding: 0 10px;
+            line-height: 39px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="father_one">
+        <div class="logo"><img src="mi-logo.png" height="49" width="49"/></div>
+    </div>
+    <div class="mother">注册小米账号</div>
+    <div class="father_two">
+        <div class="son">
+            <div class="son_one"><h4 class="son_two">国家/地区</h4></div>
+
+            <div class="son_three" style="cursor: pointer">
+                <input type="text" class="inner" value="中国">
+                <div class="son_four">
+                    <div class="son_five"><i class="son_six"></i></div>
+                </div>
+            </div>
+
+            <div class="country" id="countryChoose" style="display: none;">
+                <div class="container countrycode-container-A">
+                    <div class="header">A</div>
+                    <ul class="list">
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="AD">Andorra</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="AF">Afghanistan</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="AG">Antigua and Barbuda</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="AI">Anguilla</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="AL">Albania</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="AM">Armenia</span><span
+                                class="record-code"></span></li>
+                    </ul>
+                </div>
+                <div class="container countrycode-container-B">
+                    <div class="header">B</div>
+                    <ul class="list_to">
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="BA">Bosnia and Herzegovina</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="BB">Barbados</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="BD">Bangladesh</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="BE">Belgium</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="BF">Burkina Faso</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="BG">Bulgaria</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="BH">Bahrain</span><span
+                                class="record-code"></span></li>
+                        <li class="record clearfix"><span class="record-country" data-code=""
+                                                          data-brief="BI">Burundi</span><span
+                                class="record-code"></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="brother">成功注册帐号后，国家/地区将不能被修改</div>
+            <h4 class="brother_one">手机号码</h4>
+            <div class="sister">
+                <div class="sister_one">
+                    <div class="sister_two">
+                        <div class="sister_three">
+                            <p class="sister_four">+86</p>
+                            <i class="sister_five"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="small">
+                    <input type="hidden" class="select-regions-input" name="region" value="CN">
+                    <label class="small_box" for>
+                        <input type="tel" name="phone" data-type="PH" placeholder="请输入手机号码">
+                    </label>
+                </div>
+            </div>
+            <div class="cat">
+                <input class="cat_one" data-to="phone-step2" type="submit" value="立即注册">
+            </div>
+        </div>
+        <div class="father_two_one">
+            <div class="father_two_tow"><label id="label" class="father_two_three">
+                <i class="agreeLog" id="agreeLog"></i>注册帐号即表示您同意并愿意遵守小米 <a href="#" class="father_two_four" title="用户协议"
+                                                                target="_blank">用户协议</a>和<a href="#"
+                                                                                            class="father_two_five"
+                                                                                            title=" 隐私政策 "
+                                                                                            target="_blank"> 隐私政策 </a>
+            </label></div>
+        </div>
+    </div>
+</div>
+<div class="dance">
+    <div class="dance_two">
+        <ul class="dance_one">
+            <li><a href="#">简体</a><span class="long">|</span></li>
+
+            <li><a href="#">繁体</a><span class="long">|</span></li>
+
+            <li><a href="#">English</a><span class="long">|</span></li>
+
+            <li><a href="#">常见问题</a></li>
+        </ul>
+    </div>
+    <div class="dance_three"></div>
+    <div>
+        <p class="info">小米公司版权所有-京ICP备10046444-
+            <a href="#" class="info_of"><span><img src="https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png"></span>京公网安备11010802020134号</a>
+            -京ICP证110507号
+        </p>
+    </div>
+</div>
+
+<script>
+    var state = document.getElementsByClassName('son_three')[0];
+    state.addEventListener('click', function () {
+        var country = document.getElementById('countryChoose');
+        var a = country.style.display;
+        if (a == 'none') {
+            country.style.display = 'block';
+        }
+        if (a == 'block') {
+            country.style.display = 'none';
+        }
+    })
+</script>
+
+<script>
+    document.getElementById('label').addEventListener('click', function () {
+        var a = document.getElementById('agreeLog').className;
+        if (a == 'agreeLog') {
+            document.getElementById('agreeLog').className = 'disagreeLog';
+        }
+        if (a == 'disagreeLog') {
+            document.getElementById('agreeLog').className = 'agreeLog';
+        }
+    })
+
+</script>
+
+
+</body>
+</html>

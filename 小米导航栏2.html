@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1226px, initial-scale=1.0">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <title>小米导航栏</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        /*导航栏*/
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .head {
+            width: 100%;
+            height: 40px;
+            background-color: #333;
+        }
+
+        .inner {
+            width: 1226px;
+            height: 100%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .inner .leftnav {
+            list-style: none;
+        }
+
+        .inner .leftnav li {
+            float: left;
+        }
+
+        .inner .leftnav li a {
+            color: #b0b0b0;
+            line-height: 40px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .inner .leftnav li a:hover {
+            color: #FFF;
+        }
+
+        .inner .leftnav li span {
+            margin: 0 .5em;
+            color: #424242;
+        }
+
+        .inner .rightnav {
+            list-style: none;
+            float: right;
+        }
+
+        .inner .rightnav li {
+            float: left; /*子元素在父元素中往左浮动*/
+        }
+
+        .inner .rightnav li a {
+            color: #b0b0b0;
+            line-height: 40px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .inner .rightnav li a:hover {
+            color: #FFF;
+        }
+
+        .inner .rightnav li span {
+            margin: 0 .5em;
+            color: #424242;
+        }
+
+        .inner .rightnav .message {
+            padding: 0 10px;
+            cursor: text;
+        }
+
+        .inner .rightnav .message a {
+            cursor: text;
+        }
+
+        .inner .rightnav .topbar-cart {
+            width: 120px;
+            margin-left: 15px;
+            background: #424242;
+            text-align: center;
+            position: relative;
+        }
+
+        .inner .rightnav .topbar-cart:hover {
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        .inner .rightnav .topbar-cart:hover a {
+            color: #ff6700;
+        }
+
+        .inner .rightnav .topbar-cart:hover div {
+            display: block;
+        }
+
+        .inner .rightnav .topbar-cart a:hover {
+            color: #ff6700;
+        }
+
+        .inner .rightnav .topbar-cart div {
+            width: 316px;
+            height: 100px;
+            background-color: #ffF;
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 0px;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .inner .rightnav .topbar-cart-che {
+            margin: 0 6px 0 0;
+            font-size: 1.5em;
+            vertical-align: text-top;
+        }
+
+        .triger {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-width: 0 10px 10px;
+            border-style: solid;
+            border-color: transparent transparent #fff;
+            left: 50%;
+            margin-left: -10px;
+            top: -10px;
+        }
+
+        .xiaomishangc {
+
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            line-height: 1;
+            margin-top: -14px;
+        }
+
+        .xiaomidownload {
+            cursor: pointer;
+            display: none;
+            position: absolute;
+            width: 120px;
+            height: 150px;
+            box-shadow: rgb(170, 170, 170) 0px 1px 5px;
+            left: 50%;
+            margin-left: -68px;
+            top: 41px;
+        }
+
+        .inner .leftnav .download:hover .xiaomidownload {
+            display: block;
+        }
+
+        .download {
+            position: relative;
+        }
+    </style>
+    <style>
+        /*类别*/
+
+        .category {
+            width: 100%;
+            height: 100px;
+        }
+
+        .category .middle {
+            width: 1226px;
+            margin: 0 auto;
+            height: 100px;
+        }
+
+        .logo-contain {
+            display: inline-block;
+            margin-top: 22px;
+            width: 55px;
+            height: 55px;
+            background-color: #ff6700;
+        }
+
+        .logo {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            background-image: url("https://s01.mifile.cn/i/mi-logo.png");
+            background-position: center;
+        }
+
+        .category-title {
+            height: 100px;
+
+            vertical-align: top;
+            display: inline-block;
+            font-size: 16px;
+            list-style: none;
+            padding-left: 30px;
+        }
+        .category-title  li{
+            line-height: 100px;
+            padding: 0 10px;
+            display: inline-block;
+
+        }
+        .firstChild{
+            width: 122px;
+        }
+        .category-title  li a{
+            color: #333;
+            text-align: center;
+            text-decoration: none;
+        }
+        .category-title  li a:hover{
+            color: #ff6700;
+        }
+
+        .search{
+            display: inline-block;
+            position: relative;
+            right: -32px;
+        }
+        .search .search-text{
+            float: left;
+            display: inline-block;
+            width: 223px;
+            height: 48px;
+            padding: 0 10px;
+            border: 1px solid #e0e0e0;
+            border-right: 0;
+            font-size: 14px;
+            line-height: 48px;
+        }
+        .search .search-text:focus{
+            outline: 0;
+            border: 1px solid #ff6700;
+            border-right: 0;
+        }
+        .search .search-text:focus + .search-logo {
+            border: 1px solid #ff6700;
+        }
+        .search .search-logo{
+            float: left;
+            display: inline-block;
+            font-size: 24px;
+            line-height: 48px;
+            color: #616161;
+            width: 52px;
+            height: 48px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+
+        }
+        .search .search-logo:hover {
+            background: #ff6700;
+            color: #fff;
+            border: 1px solid #ff6700;
+        }
+
+    </style>
+</head>
+<body>
+<div class="head">
+    <div class="inner">
+        <ul class="leftnav">
+            <li><a href="#">小米商城</a> <span>|</span></li>
+            <li><a href="#">MIUI</a><span>|</span></li>
+            <li><a href="#">IoT</a><span>|</span></li>
+            <li><a href="#">云服务</a><span>|</span></li>
+            <li><a href="#">金融</a><span>|</span></li>
+            <li><a href="#">有品</a><span>|</span></li>
+            <li><a href="#">小爱开放平台</a><span>|</span></li>
+            <li><a href="#">政企服务</a><span>|</span></li>
+            <li><a href="#">资质证照</a><span>|</span></li>
+            <li><a href="#">协议规则</a><span>|</span></li>
+            <li class="download">
+                <a href="#">下载app</a>
+                <span>|</span>
+                <div class="xiaomidownload">
+                    <div class="triger">
+
+                    </div>
+                    <div style="text-align: center;">
+                        <img style="margin: 17px 0;"
+                             src="https://i1.mifile.cn/f/i/17/appdownload/download.png?1"
+                             alt="" width="90">
+                    </div>
+                    <div class="xiaomishangc">
+                        小米商城APP
+                    </div>
+                </div>
+            </li>
+            <li><a href="#">Select Region</a></li>
+        </ul>
+        <ul class="rightnav">
+            <li><a href="#">登录</a><span>|</span></li>
+            <li><a href="#">注册</a><span>|</span></li>
+            <li class="message">
+                <a href="#">消息通知</a></li>
+            <li class="topbar-cart">
+                <a href="#">
+                    <i class="topbar-cart-che fa fa-shopping-cart "></i>购物车(0)
+                </a>
+                <div>
+                    购物车中还没有商品，赶紧选购吧！
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="category">
+    <div class="middle">
+        <div class="logo-contain">
+            <a href="#" class="logo"></a>
+        </div>
+        <ul class="category-title">
+            <li class="firstChild">
+                <a href="#"></a>
+            </li>
+            <li>
+                <a href="#">小米手机</a>
+            </li>
+            <li>
+                <a href="#">红米</a>
+            </li>
+            <li><a href="#">电视</a>
+            </li>
+            <li>
+                <a href="#">笔记本</a>
+            </li>
+            <li>
+                <a href="#">家电</a>
+            </li>
+            <li>
+                <a href="#">新品</a>
+            </li>
+            <li>
+                <a href="#">路由器</a>
+            </li>
+            <li>
+                <a href="#">智能硬件</a>
+            </li>
+            <li><a href="#">服务</a>
+            </li>
+            <li>
+                <a href="#">社区</a>
+            </li>
+
+        </ul>
+        <div class="search">
+            <input type="text" class="search-text">
+            <a href="#" class="search-logo"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
