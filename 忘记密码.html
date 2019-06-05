@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>忘记密码</title>
+    <style>
+        .wrapper {
+            width: 855px;
+            height: 495px;
+
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .external {
+            padding-bottom: 40px;
+            display: block;
+            background-color: yellow;
+        }
+
+        .milogo {
+            width: 49px;
+            height: 48px;
+            margin: 0 auto;
+            display: block;
+            cursor: default;
+            background-image: url(https://account.xiaomi.com/static/res/28f08d0/account-static/respassport/acc-2014/img/milogo.png);
+        }
+
+        .wrapper .title-item {
+            width: 855px;
+            height: 45px;
+            background-color: violet;
+            margin-top: -40px;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: normal;
+            text-align: center;
+        }
+        .regbox{
+            width: 332px;
+            height: 332px;
+            margin:0 auto;
+            /*background-color: red;*/
+        }
+       .tittle-one {
+            width: 320px;
+            height: 20px;
+            background-color: pink;
+           margin: 30px 0 20px;
+        }
+        /*.fixed{*/
+            /*width: 332px;*/
+            /*height: 40px;*/
+            /*background-color: gainsboro;*/
+        /*}*/
+        .fixed input{
+            width: 332px;
+            height: 20px;
+            line-height: 20px;
+            padding: 10px;
+            display: inline-block;
+        }
+        .foured input{
+            width: 190px;
+            height: 20px;
+            line-height: 20px;
+            padding: 10px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .foured img {
+            width: 117px;
+            /*margin-left: 7px;*/
+            /*vertical-align: middle;*/
+            /*cursor: pointer;*/
+            float: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="external">
+        <div class="milogo">
+
+        </div>
+    </div>
+    <div class="title-item">
+        <h4 class="title">重置密码</h4>
+    </div>
+    <div class="regbox">
+        <h5 class="tittle-one">请输入注册的邮箱地址、手机号码或小米帐号：</h5>
+        <div class="fixed" >
+            <input type="text" placeholder="邮箱/手机号码/小米帐号">
+        </div>
+        <div class="foured">
+            <input type="text" placeholder="图片验证码">
+            <img src="getCode.jpg" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
